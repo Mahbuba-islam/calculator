@@ -10,31 +10,51 @@
 </head>
 <body>
     <main class="container mx-auto mt-30">
-     <div class="container mx-auto bg-pink-950 rounded-lg px-3 py-6 w-1/5 h-1/2 ">
-        <div class="">
-        <input type="text" class="input bg-pink-300 py-8" />
+     <div class="container mx-auto bg-pink-950 rounded-lg px-3 py-6 w-1/2  h-1/2 lg:w-1/5 md:w-1/4">
+        <div id="outPut" class="bg-pink-300 py-8 px-5 rounded-lg">
+        
         </div>
         <div class="grid grid-cols-4 gap-4 mt-6">
-        <kbd class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">c</kbd>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">*</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">/</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">7</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">8</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">9</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">*</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">4</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">5</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">6</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">1</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">2</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">3</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full row-span-2">=</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full col-span-2">0</div>
-        <div class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">.</div>
+        <kbd id="clear" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">c</kbd>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">*</div>
+        <div  class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">/</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">7</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">8</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">9</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">+</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">4</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">5</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">6</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">1</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">2</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">3</div>
+        <div id="equal" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full row-span-2">=</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full col-span-2">0</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">.</div>
         </div>
-    
+        <!-- <div class="grid grid-cols-4 gap-4 mt-6">
+        <kbd id="clear" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">c</kbd>
+        <div id="substruction" class=" kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
+        <div id="multifly" class=" kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">*</div>
+        <div id="division" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">/</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">7</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">8</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">9</div>
+        <div id="addition" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">+</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">4</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">5</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">6</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">-</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">1</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">2</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">3</div>
+        <div id="equal" class="kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full row-span-2">=</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full col-span-2">0</div>
+        <div class="button kbd bg-pink-300 text-black text-lg font-bold shadow-md w-full h-full">.</div>
+        </div>
+     -->
     </div>
    
 
